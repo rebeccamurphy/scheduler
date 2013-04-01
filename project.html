@@ -1,0 +1,102 @@
+<HTML>	
+ 		
+ 		
+		<HEAD>
+		<TITLE></TITLE>
+		<style type="text/css">
+		body{
+			padding-left:14em;
+			fontfamily:"Book Antiqua",serif;
+			color:white;
+			background-color:#ab1313}
+			
+		ul.navbar{
+			position:absolute;
+			top: 0em;
+			left: 0em;
+			width: 12em}
+		</style>
+		
+		<script type ="text/javascript" src="script.js"> </script> 
+			
+		</HEAD>	
+ 		
+		<BODY>
+		<ul class="navbar">
+		<form name = "the_form">
+		<img src="http://www.directoryofschools.com/uploads/schools/school_thumbnail_new/marist_logo.png"/>
+		<p><u>Class Name:</u> <input type = "text" id = "class_name"> <br>
+		<p><u>Location:</u> <input type = "text" id = "class_loc"> <br>
+		
+		<p></p>
+		<p></p>
+		
+		<table border="1px" bordercolor="white"><tr><td>
+		 <p><input type = "checkbox" id = "mday" 0> Monday 
+		 <p> <input type = "checkbox" id = "tday" 0> Tuesday
+		 <p><input type = "checkbox" id = "wday" 0> Wednesday 
+		 <p> <input type = "checkbox" id = "rday" 0> Thursday
+		 <p> <input type = "checkbox" id = "fday" 0> Friday
+		 </td></tr></table>
+		 
+		 <p>Credits:
+		 <p>
+		 <select name = "credit" id = "credit">
+		 <option value = 0 > 0 </option>
+		  <option value = 1 > 1 </option>
+		  <option value = 2 > 2 </option>
+		  <option value = 3 > 3 </option>
+		  <option value = 4 > 4 </option>
+		  <option value = 5 > 5 </option>
+		 </select>
+		 
+		 <p>Regular Length Day Time Classes
+		 <p>
+		 
+		 <select name = "the_day_time" id = "the_day_time">
+		  <option value = 0 > NaN </option>
+		 <option value = 1>08:00am to 09:15am</option>
+		 <option value = 2>09:30am to 10:45am</option>
+		 <option value = 3>11:00am to 12:15pm</option>
+		 <option value = 4>12:30pm to 01:45pm</option>
+		 <option value = 5>02:00pm to 03:15pm</option>
+		 <option value = 6>03:30pm to 04:45pm</option>
+		 <option value = 7>05:00pm to 06:15pm</option>
+		 </select>
+		 
+		 <p>Double Length Classes/Labs
+		 <p>
+		 <select name = "the_double_time" id = "the_double_time">
+		 
+		 <option value = 0> NaN </option>
+		 <option value = 8>08:00am to 10:45pm</option>
+		 <option value = 9>09:30am to 12:30pm</option>
+		 <option value= 10>11:00pm to 01:45pm</option>
+		 <option value= 11>12:30pm to 03:15pm</option>
+		 <option value= 12>02:00pm to 04:45pm</option>
+		 <option value= 13>03:30pm to 06:15pm</option>
+		 
+		 
+		 </select>
+		 
+		 <p>Night Classes
+		 
+		 <p>
+		 <select name = "the_night_time" id = "the_night_time">
+		 <option value = 0> NaN </option>
+		 
+		 <option value = 14>06:30pm to 09:15pm</option>		
+		 </select>
+		 <p>
+		 <input type = "button" value = "Add Class" onClick ="addClass()">
+	
+<!--		<input type = "button" value = "See Classes Added so far" onClick ="showSchedule()">
+		<input type = "button" value = "See Classes Added on Table" onClick ="cycleSchedule()">
+	-->	 
+		 </ul>
+
+		</form>
+		
+		</BODY>
+		
+</HTML>
